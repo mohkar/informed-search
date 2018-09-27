@@ -1,0 +1,10 @@
+if (line.charAt(0) == '%') {
+					continue;
+				}
+				String arr[] = line.split("road[(]|[)][.\\s{1}]");
+				int count = 0;
+				do {
+					String route[] = arr[count].split(", ");
+					System.out.println(String.join("#", route));
+				} while(count++ < arr.length);
+"road[(]|[)][.\\s{1}]"
